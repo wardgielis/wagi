@@ -1,0 +1,72 @@
+site_name: wagi
+repo_url: https://github.com/wardgielis/wagi
+repo_name: wagi
+docs_dir: docs
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - content.code.annotate
+    - toc.integrate
+    - toc.follow
+    - navigation.path
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: pink
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+#markdown_extensions:
+#  plantuml_markdown:
+#    servers: # Servers to use for remote rendering, tried in order
+#      - url: https://www.plantuml.com/plantuml
+#    theme: sketchy
+#    format: svg_inline
+    #classes: custom_uml_style
+plugins:
+  - search
+  - blog
+#  - mkdocstrings:
+#      handlers:
+#        python:
+#          paths: [../] # navigate up a level to autodetect docs in code
+#          options:
+#            show_source: true # to display the actual code under the function description
+#            docstring_style: sphinx  # Support reStructuredText
+
+#  - plantuml:
+#      puml_url: https://www.plantuml.com/plantuml
+#      puml_keyword: plantuml
+#      theme:
+#        url: https://raw.githubusercontent.com/MikhailKravets/mkdocs_puml/themes/themes/
+#        light: material/teal-light
+#        dark: material/deep-orange-dark
+
+#extra_css:
+#  - assets/docs.css
+extra:
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/arise-biodiversity/biocloud/core/biocloud-core
+    - icon: fontawesome/brands/slack
+      link: https://arise-r2z8389.slack.com
